@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Zoska</title>
+</head>
+<body>
+    <section class="banner">
+        <img src="https://atvmedia.ru/uploads/news/202204/165053302196.jpg" alt="Letadlo">
+        <div class="menu">
+            <a href="index.html#about" class="menu-item">
+                <img src="assets/images/fighter.svg" alt="Fighter">
+                <h2>About military airplanes</h2>
+            </a>
+            <a href="#" class="menu-item history-open">
+                <img src="assets/images/history.svg" alt="History">
+                <h2>History of military airplanes</h2>
+            </a>
+            <a href="process.html#working" class="menu-item">
+                <img src="assets/images/algoritm.svg" alt="Algoritm">
+                <h2>Working Process</h2>
+            </a>
+        </div>
+    </section>
+    <div class="history-popup">
+        <div class="close-history">
+            <img src="assets/images/close.svg" alt="close">
+        </div>
+        <div class="container-history">
+            <div class="header-history">The Evolution of Military Airplanes</div>
+            <div class="image-container">
+                <img src="assets/images/history.jpg" alt="Military Airplane">
+            </div>
+
+            <div class="content-section">
+                <h2>Introduction to Military Airplanes</h2>
+                <p>Military airplanes have played a crucial role in warfare for over a century. From their early days as
+                    reconnaissance tools to their modern-day use in air superiority, ground attack, and tactical roles,
+                    military aircraft have revolutionized how wars are fought. This article explores the evolution and
+                    significance of these powerful machines.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>The Birth of Military Aviation</h2>
+                <p>The use of airplanes in warfare began during World War I, with the first combat aircraft being used
+                    for reconnaissance and bombing. The <span class="highlight">Sopwith Camel</span> and the <span
+                        class="highlight">Fokker Dr.I</span> were among the most famous aircraft of this era, designed
+                    primarily for dogfights and gaining air superiority.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Advancements in Technology</h2>
+                <p>By World War II, military aircraft technology had made significant advancements. With the development
+                    of faster, more maneuverable fighters like the <span class="highlight">P-51 Mustang</span> and the
+                    <span class="highlight">Supermarine Spitfire</span>, air forces were able to dominate the skies.
+                    Additionally, bombers such as the <span class="highlight">B-17 Flying Fortress</span> provided
+                    devastating firepower.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Modern Military Aircraft</h2>
+                <p>Today, military airplanes have become incredibly sophisticated machines. The introduction of stealth
+                    technology, advanced avionics, and precision weaponry has transformed the landscape of warfare.
+                    Aircraft such as the <span class="highlight">F-22 Raptor</span> and the <span class="highlight">F-35
+                        Lightning II</span> are capable of conducting a wide range of missions, from air dominance to
+                    ground attack and intelligence gathering.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>The Future of Military Aviation</h2>
+                <p>The future of military aviation is marked by the development of unmanned aerial vehicles (UAVs) and
+                    drones. These aircraft offer unparalleled flexibility, cost-effectiveness, and risk reduction for
+                    military operations. Additionally, the exploration of hypersonic speeds and advanced AI systems is
+                    expected to usher in a new era of warfare.</p>
+            </div>
+
+            <div class="footer-history">
+                <p>&copy; 2025 Military Aviation News</p>
+            </div>
+        </div>
+    </div>
+    <section class="working" id="working">
+        <div class="container">
+            <div class="working-item">
+                <h2>Alghotims</h2>
+                <a href="https://drive.google.com/file/d/1Wr6rlclf89koStFfbjdQHMD6xsoFMzQr/view?usp=drive_link">Alogritm 1</a>
+                <a href="https://drive.google.com/file/d/1KDXtfh-E9tFV5n-LtBs5ECkGIoMMc1cK/view?usp=drive_link">Alogritm 2</a>
+                <a href="https://drive.google.com/file/d/12-76nSvDWAEv1WtoQoi-ygo2LR5psoNJ/view?usp=drive_link">Alogritm 3</a>
+                <a href="https://drive.google.com/file/d/1jaDhtHOpyAKdvy304J-jcLuVOitIXJvw/view?usp=drive_link">Alogritm 4</a>
+                <a href="https://drive.google.com/file/d/1X0w-JbjCeFpt_PTBd3FRkAadPu5sMb6h/view?usp=drive_link">Alogritm 5</a>
+            </div>
+            <div class="working-item">
+                <h2>Resume</h2>
+                <a href="resume.html">Resume</a>
+            </div>
+            <div class="working-item">
+                <h2>Vrtlnk</h2>
+                <a href="vrtlnk.html">Vrtlnk</a>
+            </div>
+            <div class="working-item">
+                <h2>Formuliar</h2>
+                <a href="Popova_Sofiia_formular_01.html">Formuliar</a>
+            </div>
+        <div class="working-item">
+            <h2>Nudny</h2>
+            <a href="boeing.html">Boeing</a>
+        </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.history-open').click(function(e) {
+                e.preventDefault();
+                $('.history-popup').addClass('active');
+            });
+            $('.close-history').click(function() {
+                $('.history-popup').removeClass('active');
+            });
+            $('.about-open').click(function(e) {
+                e.preventDefault();
+                $('.about-popup').addClass('active');
+            });
+            $('.close-about').click(function() {
+                $('.about-popup').removeClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
